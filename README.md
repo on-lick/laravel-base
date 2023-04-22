@@ -23,3 +23,6 @@ To create a container based on the image
 ```
 docker run -d --name laravel-base -p 8000:8000 -v ${PWD}:/app -w /app --link database:database franzstimpfl/skill17-laravel-base
 ```
+
+## Configuration
+Do not forget to adjust your .env file accordingly
