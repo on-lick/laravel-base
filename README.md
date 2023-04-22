@@ -7,6 +7,19 @@ All the agreed upon libraries in the right versions will be included in this ima
 ## How to use
 You will need a running and up-to-date Docker version on your machine.
 
+## Using the repository
+Of course you can also use the repository locally. 
 ```
-docker pull gitlab.skill17.com:5000/competitor-base/laravel-environment
+composer install
+```
+
+## Working with the office image from docker hub
+To pull the image
+```
+docker pull franzstimpfl/skill17-laravel-base
+```
+
+To create a container based on the image
+```
+docker run -d --name laravel-base -p 8000:8000 -v ${PWD}:/app -w /app --link database:database franzstimpfl/skill17-laravel-base
 ```
