@@ -23,7 +23,7 @@ COPY . /var/www/html/
 RUN rm -r .git
 RUN rm Dockerfile
 
-RUN php composer install
+RUN composer install
 
 RUN chown -R www-data.www-data *
 
